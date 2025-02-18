@@ -1,35 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   swap_comande.c                                     :+:      :+:    :+:   */
+/*   input_handling.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/16 14:16:22 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/17 13:26:43 by abnemili         ###   ########.fr       */
+/*   Created: 2025/02/18 15:35:40 by abnemili          #+#    #+#             */
+/*   Updated: 2025/02/18 15:35:48 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-void swap (t_node **stack)
-{
-    t_node  *head;
-    t_node  *node_next;
-    int     tmp;
 
-    if (stack && *stack && (*stack)->next)
-    {
-        head = *stack;
-        node_next = (*stack)->next;
-        tmp = head->value;
-        head->value = node_next->value;
-        node_next->value = tmp;
-    }
-}
-void sa(t_node **stack_a)
+long double	ft_atoi(const char *str)
 {
-    swap(stack_a);
-    write (1, "sa\n", 3);
-}
+	int			i;
+	int			sing;
+	long double	res;
 
-/// declaire in trhe hader 
+	i = 0;
+	sing = 1;
+	res = 0;
+	while (str[i] == ' ')
+		i++;
+	if (str[i] == '+')
+		i++;
+	else if (str[i] == '-')
+	{
+		sing = -sing;
+		i++;
+	}
+	while (str[i] && str[i] >= '0' && str[i] <= '9')
+	{
+		res = res * 10 + (str[i] - '0');
+		i++;
+	}
+	return (sing * res);
+}

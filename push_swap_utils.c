@@ -1,51 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   check_input.c                                      :+:      :+:    :+:   */
+/*   push_swap_utils.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/15 14:42:55 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/15 17:33:52 by abnemili         ###   ########.fr       */
+/*   Created: 2025/02/18 15:37:06 by abnemili          #+#    #+#             */
+/*   Updated: 2025/02/18 15:37:09 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	is_valid(char *args)
+int	check_sort(t_node *stack_a)
 {
-	int	i;
+	t_node	*head;
 
-	i = 0;
-	if (args[i] == '-' || args[i] == '+')
-		i++;
-	if (args[i] == '\0')
-		return (0);
-	while (args[i])
+	head = stack_a;
+	while (head != NULL && head->next != NULL)
 	{
-		if (is_degit(args[i]) == 0)
+		if ((head->value) > (head->next)->value)
 			return (0);
-		i++;
+		head = head->next;
 	}
 	return (1);
 }
 
-int	duplicate(t_node *stack)
+int	size_of_stack(t_node *stack_a)
 {
-	t_node	*node1;
-	t_node	*node2;
+	int		i;
+	t_node	*head;
 
-	node1 = stack;
-	while (node1)
+	head = stack_a;
+	i = 0;
+	while (head != NULL)
 	{
-		node2 = node1->next;
-		while (node2)
-		{
-			if (node1->value == node2->value)
-				return (0);
-			node2 = node2->next;
-		}
-		node1 = node1->next;
+		head = head->next;
+		i++;
 	}
-	return (1);
+	return (i);
 }
