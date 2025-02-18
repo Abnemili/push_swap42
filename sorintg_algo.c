@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:39:37 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/18 15:45:44 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/18 15:48:13 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,7 @@ void	sorting(t_node **stack_a, t_node **stack_b, int len)
 	else if (len == 4)
 		sort_4(stack_a, stack_b); //  done 
 	else if (len == 5)
-		sort_5(stack_a, stack_b);
+		sort_5(stack_a, stack_b); // done 
 	else
 		sort_stack(stack_a, stack_b, len);
 }
