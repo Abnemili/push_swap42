@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:26:06 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/18 15:26:52 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/19 13:46:00 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int					is_degit(char c);
 void				fill_stack(t_node **stack_a, char **mstr);
 int					is_valid(char *args);
 void				ft_free(char **arg_str);
-int					fill_stack_a(t_node **stack, char **av);
+	int					fill_stack_a(t_node **stack, char **av);
 
 // function :
 long double			ft_atoi(const char *str);
@@ -49,7 +49,7 @@ int					min(t_node *stack_a);
 
 // push_swap_utilis:
 int					check_sort(t_node *stack_a);
-int					size_of_stack(t_node *stack_a);
+int					stack_size(t_node *stack_a);
 
 // push_swap:
 int					duplicate(t_node *stack);
@@ -95,11 +95,11 @@ int					*fill_array(t_node *stack_a, int *array, int len);
 
 // algo_utils:
 int					ft_max(t_node *stack);
-int					ft_max_position(t_node *stack, int c);
-int					get_index_position(t_node **stack_a, int total);
+int					max_position(t_node *stack, int c);
+int					get_position(t_node **stack_a, int total);
 
 // algo:
-void				push_to_b(t_node **stack_a, t_node **stack_b, int chank);
-void				push_to_a(t_node **stack_a, t_node **stack_b);
+void				push_b(t_node **stack_a, t_node **stack_b, int chank);
+void				push_a(t_node **stack_a, t_node **stack_b);
 
 #endif
