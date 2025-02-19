@@ -29,7 +29,7 @@ int	get_position(t_node **stack_a, int total)
 	return (i);
 }
 
-int	max_v(t_node *stack)
+int	get_max(t_node *stack)
 {
 	t_node	*node;
 	int		max;
@@ -49,7 +49,7 @@ int	max_v(t_node *stack)
 	return (max);
 }
 
-int	max_position(t_node *stack, int c)
+int	get_max_position(t_node *stack, int c)
 {
 	t_node	*node;
 	int		i;

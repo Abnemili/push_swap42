@@ -94,8 +94,8 @@ void				sort_stack(t_node **stack_a, t_node **stack_b, int len);
 int					*fill_array(t_node *stack_a, int *array, int len);
 
 // algo_utils:
-int					ft_max(t_node *stack);
-int					max_position(t_node *stack, int c);
+int					get_max(t_node *stack);
+int					get_max_position(t_node *stack, int c);
 int					get_position(t_node **stack_a, int total);
 
 // algo:
