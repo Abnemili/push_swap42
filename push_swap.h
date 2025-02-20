@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:26:06 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/19 13:46:00 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/20 14:06:27 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,7 +91,7 @@ void				rra_pb(t_node **stack_a, t_node **stack_b);
 
 // sort_stack:
 void				sort_stack(t_node **stack_a, t_node **stack_b, int len);
-int					*fill_array(t_node *stack_a, int *array, int len);
+int					*fill_arr(t_node *stack_a, int *array, int len);
 
 // algo_utils:
 int					get_max(t_node *stack);
