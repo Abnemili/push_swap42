@@ -6,13 +6,13 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 11:04:09 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/20 13:36:00 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/20 13:59:36 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int fill_arr(t_node *stack_a, int *arr, int stack_len)
+int *fill_arr(t_node *stack_a, int *arr, int stack_len)
 {
     int     index;
 
@@ -21,7 +21,7 @@ int fill_arr(t_node *stack_a, int *arr, int stack_len)
     {
         arr[index] = stack_a->value;
         stack_a = stack_a->next;
-        index;
+        index++;
     }
     return (arr);
 }
