@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 11:51:48 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/19 13:51:39 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/20 13:37:24 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void push_b(t_node **stack_a, t_node **stack_b, int amnt)
     push_a(stack_a, stack_b);
 }
 
-void	push_to_a(t_node **stack_a, t_node **stack_b)
+void	push_a(t_node **stack_a, t_node **stack_b)
 {
 	int	max;
 	int	max_pos;

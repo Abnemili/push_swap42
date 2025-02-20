@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:25:27 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/18 15:37:50 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/20 13:48:57 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	main(int ac, char *av[])
 		free_stack(&stack_a);//  done 
 		return (0);
 	}
-	len = size_of_stack(stack_a);  // done 
+	len = stack_size(stack_a);  // done 
 	if (check_sort(stack_a) == 1)  // done 
 	{
 		free_stack(&stack_a); // done 

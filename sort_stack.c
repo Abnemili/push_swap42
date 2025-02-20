@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 11:04:09 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/19 11:51:18 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/20 13:36:00 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,10 @@ void sort_stack(t_node **stack_a, t_node **stack_b, int stack_len)
 {
     int     *arr;
     
-    arr  = fill_arr(*stack_a, arr, stack_len);
+    arr  = (int *)malloc(sizeof(int) * stack_len);
+    if (!arr)
+        return ;
+    arr = fill_arr(*stack_a, arr, stack_len);
     sort_arr(arr, stack_len);
     indexing(stack_a, arr, stack_len);
     if (stack_len < 250)
