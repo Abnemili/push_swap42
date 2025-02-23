@@ -51,8 +51,8 @@ int	get_max(t_node *stack)
 
 int	get_max_position(t_node *stack, int c)
 {
-	t_node	*node;
-	int		i;
+	t_node *node;
+	int i;
 
 	i = 0;
 	node = stack;

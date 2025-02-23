@@ -14,9 +14,9 @@
 
 long double	ft_atoi(const char *str)
 {
-	int			i;
-	int			sing;
-	long double	res;
+	int i;
+	int sing;
+	long double res;
 
 	i = 0;
 	sing = 1;

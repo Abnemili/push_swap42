@@ -41,7 +41,7 @@ int	is_degit(char c)
 
 int	is_valid(char *args)
 {
-	int	i;
+	int i;
 
 	i = 0;
 	if (args[i] == '-' || args[i] == '+')

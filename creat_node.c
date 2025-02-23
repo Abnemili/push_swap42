@@ -26,7 +26,7 @@ t_node	*creation(int nbr)
 
 void	add_node(t_node **stack_a, t_node *new_node)
 {
-	t_node	*node;
+	t_node *node;
 
 	node = *stack_a;
 	if (*stack_a)

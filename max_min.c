@@ -30,8 +30,8 @@ int	max(t_node *stack_a)
 
 int	min(t_node *stack_a)
 {
-	t_node	*head;
-	int		min;
+	t_node *head;
+	int min;
 
 	head = stack_a;
 	min = head->value;

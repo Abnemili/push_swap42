@@ -25,7 +25,7 @@ void	free_stack(t_node **stack)
 }
 void	ft_free(char **arg_str)
 {
-	int	i;
+	int i;
 
 	i = 0;
 	while (arg_str[i])

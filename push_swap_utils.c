@@ -12,7 +12,6 @@
 
 #include "push_swap.h"
 
-
 int	check_sort(t_node *stack_a)
 {
 	t_node	*head;
@@ -29,8 +28,8 @@ int	check_sort(t_node *stack_a)
 
 int	stack_size(t_node *stack_a)
 {
-	int		i;
-	t_node	*head;
+	int i;
+	t_node *head;
 
 	head = stack_a;
 	i = 0;

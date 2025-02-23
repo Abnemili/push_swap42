@@ -14,24 +14,24 @@
 
 int	main(int ac, char *av[])
 {
-	int		len;
-	t_node	*stack_a;
-	t_node	*stack_b;
+	int len;
+	t_node *stack_a;
+	t_node *stack_b;
 
 	if (ac == 1)
 		return (0);
 	stack_a = NULL;
 	stack_b = NULL;
-	if (fill_stack_a(&stack_a, av) == 0 || duplicate(stack_a) == 0) //done 
+	if (fill_stack_a(&stack_a, av) == 0 || duplicate(stack_a) == 0) // done
 	{
 		write(2, "Error\n", 6);
-		free_stack(&stack_a);//  done 
+		free_stack(&stack_a); //  done
 		return (0);
 	}
-	len = stack_size(stack_a);  // done 
-	if (check_sort(stack_a) == 1)  // done 
+	len = stack_size(stack_a);    // done
+	if (check_sort(stack_a) == 1) // done
 	{
-		free_stack(&stack_a); // done 
+		free_stack(&stack_a); // done
 		return (0);
 	}
 	else

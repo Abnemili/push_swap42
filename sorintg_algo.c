@@ -82,13 +82,13 @@ void	sort_5(t_node **stack_a, t_node **stack_b)
 void	sorting(t_node **stack_a, t_node **stack_b, int len)
 {
 	if (len == 2)
-		sort_2(stack_a); // done 
+		sort_2(stack_a); // done
 	else if (len == 3)
 		sort_3(stack_a); // done
 	else if (len == 4)
-		sort_4(stack_a, stack_b); //  done 
+		sort_4(stack_a, stack_b); //  done
 	else if (len == 5)
-		sort_5(stack_a, stack_b); // done 
+		sort_5(stack_a, stack_b); // done
 	else
-		sort_stack(stack_a, stack_b, len); // done 
+		sort_stack(stack_a, stack_b, len); // done
 }
