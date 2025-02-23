@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:35:40 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/18 15:35:48 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/23 20:20:26 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 long double	ft_atoi(const char *str)
 {
-	int i;
-	int sing;
-	long double res;
+	int			i;
+	int			sing;
+	long double	res;
 
 	i = 0;
 	sing = 1;

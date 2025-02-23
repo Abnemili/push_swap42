@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:39:37 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/20 14:16:20 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/23 20:22:11 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,13 +82,13 @@ void	sort_5(t_node **stack_a, t_node **stack_b)
 void	sorting(t_node **stack_a, t_node **stack_b, int len)
 {
 	if (len == 2)
-		sort_2(stack_a); // done
+		sort_2(stack_a);
 	else if (len == 3)
-		sort_3(stack_a); // done
+		sort_3(stack_a);
 	else if (len == 4)
-		sort_4(stack_a, stack_b); //  done
+		sort_4(stack_a, stack_b);
 	else if (len == 5)
-		sort_5(stack_a, stack_b); // done
+		sort_5(stack_a, stack_b);
 	else
-		sort_stack(stack_a, stack_b, len); // done
+		sort_stack(stack_a, stack_b, len);
 }

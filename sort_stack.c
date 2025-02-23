@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 11:04:09 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/20 13:59:36 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/23 20:32:39 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ int	*sort_arr(int *arr, int len)
 	}
 	return (arr);
 }
+
 void	indexing(t_node **stack_a, int *arr, int stack_len)
 {
 	t_node	*stack;
@@ -74,7 +75,7 @@ void	indexing(t_node **stack_a, int *arr, int stack_len)
 
 void	sort_stack(t_node **stack_a, t_node **stack_b, int stack_len)
 {
-	int *arr;
+	int	*arr;
 
 	arr = (int *)malloc(sizeof(int) * stack_len);
 	if (!arr)

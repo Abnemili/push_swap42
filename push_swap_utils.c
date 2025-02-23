@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:37:06 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/20 13:36:47 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/23 20:21:13 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ int	check_sort(t_node *stack_a)
 
 int	stack_size(t_node *stack_a)
 {
-	int i;
-	t_node *head;
+	int		i;
+	t_node	*head;
 
 	head = stack_a;
 	i = 0;

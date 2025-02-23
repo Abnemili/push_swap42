@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:32:14 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/18 15:34:37 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/23 20:19:52 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,10 @@ void	free_stack(t_node **stack)
 		free(node);
 	}
 }
+
 void	ft_free(char **arg_str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (arg_str[i])

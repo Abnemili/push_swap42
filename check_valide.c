@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:27:42 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/18 15:31:49 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/23 20:32:13 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ int	duplicate(t_node *stack)
 	}
 	return (1);
 }
+
 int	is_degit(char c)
 {
 	if (c >= '0' && c <= '9')
@@ -41,7 +42,7 @@ int	is_degit(char c)
 
 int	is_valid(char *args)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (args[i] == '-' || args[i] == '+')

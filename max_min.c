@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 14:03:00 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/20 14:03:14 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/23 20:34:21 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ int	max(t_node *stack_a)
 
 int	min(t_node *stack_a)
 {
-	t_node *head;
-	int min;
+	t_node	*head;
+	int		min;
 
 	head = stack_a;
 	min = head->value;

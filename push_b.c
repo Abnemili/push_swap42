@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 11:51:48 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/20 13:37:24 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/23 20:32:58 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,8 @@ void	push_b(t_node **stack_a, t_node **stack_b, int amnt)
 
 void	push_a(t_node **stack_a, t_node **stack_b)
 {
-	int max;
-	int max_pos;
+	int	max;
+	int	max_pos;
 
 	max = get_max(*stack_b);
 	max_pos = get_max_position(*stack_b, max);

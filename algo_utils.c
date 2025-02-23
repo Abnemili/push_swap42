@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 13:14:19 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/19 13:21:32 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/23 20:33:41 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,8 +51,8 @@ int	get_max(t_node *stack)
 
 int	get_max_position(t_node *stack, int c)
 {
-	t_node *node;
-	int i;
+	t_node	*node;
+	int		i;
 
 	i = 0;
 	node = stack;

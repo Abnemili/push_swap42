@@ -6,10 +6,9 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:26:06 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/23 18:37:55 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/23 20:18:03 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
