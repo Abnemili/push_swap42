@@ -6,21 +6,21 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:29:32 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/18 15:35:57 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/25 15:30:27 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	fill_stack(t_node **stack_a, char **mstr)
+void	fill_stack(t_node **stack_a, char **arg_str)
 {
 	t_node	*node;
 	int		i;
 
 	i = 0;
-	while (mstr[i])
+	while (arg_str[i])
 	{
-		node = creation(ft_atoi(mstr[i]));
+		node = creat_node(ft_atoi(arg_str[i]));
 		add_node(stack_a, node);
 		i++;
 	}
