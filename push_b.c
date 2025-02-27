@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 11:51:48 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/23 20:32:58 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/27 21:43:40 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	push_b(t_node **stack_a, t_node **stack_b, int amnt)
 		if ((*stack_a)->index <= i)
 		{
 			pb(stack_a, stack_b);
-			rb(stack_a);
+			rb(stack_b);
 			i++;
 		}
 		else if ((*stack_a)->index <= (i + amnt))

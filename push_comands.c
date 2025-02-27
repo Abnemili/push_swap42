@@ -6,22 +6,22 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:45:09 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/23 20:32:27 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/27 21:35:19 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	push(t_node **stack_1, t_node **stack_2)
+void	push(t_node **stack_a, t_node **stack_b)
 {
 	t_node	*tmp;
 
-	if (!*stack_1)
+	if (!*stack_a)
 		return ;
-	tmp = (*stack_1)->next;
-	(*stack_1)->next = *stack_2;
-	*stack_2 = *stack_1;
-	*stack_1 = tmp;
+	tmp = (*stack_a)->next;
+	(*stack_a)->next = *stack_b;
+	*stack_b = *stack_a;
+	*stack_a = tmp;
 }
 
 void	pb(t_node **stack_a, t_node **stack_b)

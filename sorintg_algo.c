@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:39:37 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/23 20:22:11 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/27 21:51:20 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ void	sort_5(t_node **stack_a, t_node **stack_b)
 	else if ((*stack_a)->next->value == min(*stack_a))
 	{
 		sa(stack_a);
-		pb(stack_a, stack_a);
+		pb(stack_a, stack_b);
 	}
 	else if ((*stack_a)->next->next->value == min(*stack_a))
 		ra_pb(stack_a, stack_b);

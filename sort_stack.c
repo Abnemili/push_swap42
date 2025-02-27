@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 11:04:09 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/23 20:32:39 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/27 21:46:57 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,8 +84,8 @@ void	sort_stack(t_node **stack_a, t_node **stack_b, int stack_len)
 	sort_arr(arr, stack_len);
 	indexing(stack_a, arr, stack_len);
 	if (stack_len < 250)
-		push_b(stack_a, stack_a, 15);
+		push_b(stack_a, stack_b, 15);
 	else
-		push_b(stack_a, stack_b, 45);
+		push_b(stack_a, stack_b, 30);
 	free(arr);
 }
