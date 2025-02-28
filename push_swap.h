@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:26:06 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/25 15:30:16 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/28 20:02:55 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void				fill_stack(t_node **stack_a, char **arg_str);
 int					is_valid(char *args);
 void				ft_free(char **arg_str);
 int					fill_stack_a(t_node **stack, char **av);
-int					ft_atoi(const char *str);
+long				ft_atol(const char *str);
 t_node				*last_node(t_node *stack);
 t_node				*before_last_node(t_node *stack);
 int					max(t_node *stack_a);

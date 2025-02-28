@@ -6,13 +6,13 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:35:40 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/25 14:58:04 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/02/28 20:03:08 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	ft_atoi(const char *str)
+long	ft_atol(const char *str)
 {
 	int			i;
 	int			sing;
