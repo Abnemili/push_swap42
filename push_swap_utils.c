@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:37:06 by abnemili          #+#    #+#             */
-/*   Updated: 2025/03/01 14:11:16 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/03/01 14:27:46 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	stack_size(t_node *stack_a)
 	}
 	return (count);
 }
-int	max(t_node *stack_a)
+int	max_value(t_node *stack_a)
 {
 	t_node	*head;
 	int		max;
@@ -56,7 +56,7 @@ int	max(t_node *stack_a)
 	return (max);
 }
 
-int	min(t_node *stack_a)
+int	min_value(t_node *stack_a)
 {
 	t_node	*head;
 	int		min;

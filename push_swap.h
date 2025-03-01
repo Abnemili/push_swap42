@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:26:06 by abnemili          #+#    #+#             */
-/*   Updated: 2025/03/01 14:07:15 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/03/01 14:28:03 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@ int					fill_stack_a(t_node **stack, char **av);
 long				ft_atol(const char *str);
 t_node				*last_node(t_node *stack);
 t_node				*before_last_node(t_node *stack);
-int					max(t_node *stack_a);
-int					min(t_node *stack_a);
+int					max_value(t_node *stack_a);
+int					min_value(t_node *stack_a);
 int					check_sort(t_node *stack_a);
 int					stack_size(t_node *stack_a);
 int					duplication(t_node *stack);

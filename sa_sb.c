@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   swap_comande.c                                     :+:      :+:    :+:   */
+/*   sa_sb.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:41:02 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/23 20:23:31 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/03/01 14:26:39 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,16 @@
 void	swap(t_node **stack)
 {
 	t_node	*head;
-	t_node	*node_next;
+	t_node	*next_node;
 	int		tmp;
 
 	if (stack && *stack && (*stack)->next)
 	{
 		head = *stack;
-		node_next = (*stack)->next;
+		next_node = (*stack)->next;
 		tmp = head->value;
-		head->value = node_next->value;
-		node_next->value = tmp;
+		head->value = next_node->value;
+		next_node->value = tmp;
 	}
 }
 
