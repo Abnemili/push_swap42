@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   check_valide.c                                     :+:      :+:    :+:   */
+/*   check_input.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:27:42 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/25 15:57:36 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/03/01 14:07:02 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	duplicate(t_node *stack)
+int	duplication(t_node *stack)
 {
 	t_node	*node1;
 	t_node	*node2;
@@ -32,7 +32,7 @@ int	duplicate(t_node *stack)
 	return (1);
 }
 
-int	is_degit(char c)
+int	is_digit(char c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);
@@ -51,7 +51,7 @@ int	is_valid(char *args)
 		return (0);
 	while (args[i])
 	{
-		if (is_degit(args[i]) == 0)
+		if (is_digit(args[i]) == 0)
 			return (0);
 		i++;
 	}

@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:29:32 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/28 20:12:38 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/03/01 13:46:27 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,10 +36,10 @@ int	fill_stack_a(t_node **stack, char **av)
 	while (av[i])
 	{
 		arg_str = ft_split(av[i], ' ');
-		if (!arg_str[0])
+		if (arg_str[0] == NULL)
 			return (ft_free(arg_str), 0);
 		j = 0;
-		while (arg_str[j])
+		while (arg_str[j] != NULL)
 		{
 			if (is_valid(arg_str[j]) == 0)
 				return (ft_free(arg_str), 0);

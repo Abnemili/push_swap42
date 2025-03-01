@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:26:06 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/28 20:02:55 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/03/01 14:07:15 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ typedef struct s_node
 
 t_node				*creat_node(int nbr);
 void				add_node(t_node **stack_a, t_node *new_node);
-int					is_degit(char c);
+int					is_digit(char c);
 void				fill_stack(t_node **stack_a, char **arg_str);
 int					is_valid(char *args);
 void				ft_free(char **arg_str);
@@ -38,7 +38,7 @@ int					max(t_node *stack_a);
 int					min(t_node *stack_a);
 int					check_sort(t_node *stack_a);
 int					stack_size(t_node *stack_a);
-int					duplicate(t_node *stack);
+int					duplication(t_node *stack);
 void				free_stack(t_node **stack);
 void				push(t_node **stack_1, t_node **stack_2);
 void				pb(t_node **stack_a, t_node **stack_b);
