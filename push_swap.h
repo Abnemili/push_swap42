@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:26:06 by abnemili          #+#    #+#             */
-/*   Updated: 2025/03/01 14:28:03 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/03/01 20:49:17 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
 
 typedef struct s_node
 {
-	int				index;
-	int				value;
+	int				index; // 17
+	int				value; // 200
 	struct s_node	*next;
 }					t_node;
 
@@ -62,7 +62,6 @@ void				ra_pb(t_node **stack_a, t_node **stack_b);
 void				rra_pb(t_node **stack_a, t_node **stack_b);
 void				sort_stack(t_node **stack_a, t_node **stack_b, int len);
 int					*fill_arr(t_node *stack_a, int *array, int len);
-int					get_max(t_node *stack);
 int					get_max_position(t_node *stack, int c);
 int					get_position(t_node **stack_a, int total);
 void				push_b(t_node **stack_a, t_node **stack_b, int chank);

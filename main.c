@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 15:25:27 by abnemili          #+#    #+#             */
-/*   Updated: 2025/03/01 14:06:47 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/03/01 19:07:45 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,14 @@ int	main(int ac, char *av[])
 		return (0);
 	stack_a = NULL;
 	stack_b = NULL;
-	if (fill_stack_a(&stack_a, av) == 0 || duplication(stack_a) == 0) // done 
+	if (fill_stack_a(&stack_a, av) == 0 || duplication(stack_a) == 0)
 	{
 		write(2, "Error\n", 6);
 		free_stack(&stack_a);
 		exit(1);
 	}
-	len = stack_size(stack_a); // done 
-	if (check_sort(stack_a) == 1) // done 
+	len = stack_size(stack_a);
+	if (check_sort(stack_a) == 1)
 	{
 		free_stack(&stack_a);
 		return (0);

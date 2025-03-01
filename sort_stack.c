@@ -6,7 +6,7 @@
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 11:04:09 by abnemili          #+#    #+#             */
-/*   Updated: 2025/03/01 18:47:58 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/03/01 21:19:17 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,6 @@ void	indexing(t_node **stack_a, int *arr, int stack_len)
 		i++;
 	}
 }
-
 
 void	sort_stack(t_node **stack_a, t_node **stack_b, int stack_len)
 {

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_b.c                                           :+:      :+:    :+:   */
+/*   push_a_b.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abnemili <abnemili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 11:51:48 by abnemili          #+#    #+#             */
-/*   Updated: 2025/02/27 21:43:40 by abnemili         ###   ########.fr       */
+/*   Updated: 2025/03/01 21:13:18 by abnemili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ void	push_a(t_node **stack_a, t_node **stack_b)
 	int	max;
 	int	max_pos;
 
-	max = get_max(*stack_b);
+	max = max_value(*stack_b);
 	max_pos = get_max_position(*stack_b, max);
 	while (stack_size(*stack_b) > 0)
 	{
@@ -54,7 +54,7 @@ void	push_a(t_node **stack_a, t_node **stack_b)
 			pa(stack_b, stack_a);
 			if (stack_size(*stack_b) > 0)
 			{
-				max = get_max(*stack_b);
+				max = max_value(*stack_b);
 				max_pos = get_max_position(*stack_b, max);
 			}
 		}
