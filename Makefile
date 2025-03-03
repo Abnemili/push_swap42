@@ -32,7 +32,8 @@ fclean : clean
 	$(RM) $(NAME)
 
 clean :
-	$(RM) $(NAME)
+	$(RM) $(OBJ)
 
 re : fclean all
 
+.SECONDARY : $(OBJ)
